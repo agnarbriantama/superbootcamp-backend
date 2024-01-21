@@ -15,7 +15,7 @@ router.get("/books", getBooks);
 router.get("/books/:id", getBookById);
 router.post("/books", protect, createBook);
 router.patch("/books/:id", protect, updateBook);
-router.delete("/books/:id ", protect, deleteBooks);
+router.delete("/books/:id", protect, deleteBooks);
 router.get("/categories/:id/books", getBooksByCategory);
 
 export default router;
